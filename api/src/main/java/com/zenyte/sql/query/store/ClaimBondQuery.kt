@@ -16,7 +16,7 @@ class ClaimBondQuery(val request: ClaimBondRequest) : SQLRunnable() {
     
     private val logger = KotlinLogging.logger {}
     
-    private val bondEmail = "bonds@zenyte.com"
+    private val bondEmail = "bonds@elvarg.com"
     
     private val selectTokenQuery = "SELECT id FROM store_payments WHERE address_pass = ? AND email = ?"
     private val rankQuery = "INSERT INTO store_payments ( username, email, item_name, paid, credit_amount, status, client_ip, cvc_pass, zip_pass, address_pass, live_mode )" +

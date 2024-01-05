@@ -27,9 +27,9 @@ class WorldsCommand : Command {
         }
     
         val embed = EmbedBuilder()
-                .setColor(15837287)
+                .setColor(750130)
                 .setTimestamp(Instant.now())
-                .setFooter("Zenyte Worlds", "https://zenyte.com/img/ic_launcher.png")
+                .setFooter("Elvarg Worlds", "https://cdn.discordapp.com/attachments/1084338151167905946/1146438508374917161/ElvarglogoNew.png")
                 .setThumbnail("https://zenyte.com/img/world_map_icon.png")
     
         worlds.sortedBy { it.id }

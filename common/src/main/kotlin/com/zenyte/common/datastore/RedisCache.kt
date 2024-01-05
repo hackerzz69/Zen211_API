@@ -17,7 +17,7 @@ object RedisCache {
     
     private val logger = KotlinLogging.logger {}
     
-    private val redisClient = RedisClient.create(RedisURI.Builder.redis(getenv("REDIS_HOST", "147.135.114.41"), 6379).build())
+    private val redisClient = RedisClient.create(RedisURI.Builder.redis(getenv("REDIS_HOST", "localhost"), 6379).build())
     
     val redis: StatefulRedisConnection<String, String> by lazy {
         try {

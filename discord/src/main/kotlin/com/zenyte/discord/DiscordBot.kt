@@ -66,8 +66,15 @@ object DiscordBot {
         var success = false
     
         for (i in 1..API_PING_AMOUNT) {
+            val apiUrl = Api.getApiRoot()
+                .addPathSegment("ping")
+                .build()
+
+            // Log the URL
+            logger.info ("Request URL: $apiUrl")
+
             logger.info { "Pinging api service; attempt $i" }
-        
+
             val ping = try {
                 Api.ping()
             } catch (e: ConnectException) {

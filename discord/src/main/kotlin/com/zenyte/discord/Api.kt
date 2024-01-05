@@ -36,7 +36,7 @@ object Api {
             }
             .build()
     
-    fun getApiRoot() = (API_URL_ENV_VAR.value ?: "http://localhost/").toHttpUrlOrNull()!!.newBuilder()
+    fun getApiRoot() = (API_URL_ENV_VAR.value ?: "http://localhost:8080/").toHttpUrlOrNull()!!.newBuilder()
     
     fun ping(): Boolean {
         val body = FormBody.Builder()

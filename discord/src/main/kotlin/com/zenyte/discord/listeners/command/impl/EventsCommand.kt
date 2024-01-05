@@ -26,8 +26,8 @@ class EventsCommand : Command {
         val embed = EmbedBuilder()
                 .setColor(15837287)
                 .setTimestamp(Instant.now())
-                .setTitle("Zenyte Event Calendar", "https://forums.zenyte.com/calendar/1-community-calendar/")
-                .setFooter("Zenyte Events", "https://cdn.zenyte.com/zenyte.png")
+                .setTitle("Elvarg Event Calendar", "https://playelvarg.com/")
+                .setFooter("Elvarg Events", "https://cdn.discordapp.com/attachments/1084338151167905946/1146438508374917161/ElvarglogoNew.png")
         
         channel.sendMessage(embed.setDescription("Fetching current events...").build()).queue {
             val events = Calendar.events()

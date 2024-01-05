@@ -33,7 +33,7 @@ private fun updateRichPresence() {
     
         if (totalPlayers != TaskVars.playersOnline) {
             TaskVars.playersOnline = totalPlayers
-            DiscordBot.setPresence("zenyte.com | $totalPlayers online")
+            DiscordBot.setPresence("Elvarg | $totalPlayers online")
         }
     }, 1, 20, TimeUnit.SECONDS)
 }
